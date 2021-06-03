@@ -5,12 +5,20 @@ const handleUserInput = function(key) {
     process.exit();
   } else if (key === 'w') {
     connection.write('Move: up');
+    connection.write('Say: UPP');
   } else if (key === 'a') {
     connection.write('Move: left');
+    connection.write('Say: lef');
   } else if (key === 's') {
     connection.write('Move: down');
+    connection.write('Say: dow');
   } else if (key === 'd') {
     connection.write('Move: right');
+    connection.write('Say: rit');
+  } else if (key === 'q') {
+    connection.write('Say: HI');
+  } else if (key === 'e') {
+    connection.write('Say: BYE');
   } // your code here
 };
 
